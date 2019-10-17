@@ -198,6 +198,7 @@
       </div>
       
     
+
     <div class="article-entry" itemprop="articleBody">
       
         <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
@@ -233,6 +234,34 @@
   
   
 </nav>
+
+  
+  
+  
+	<! -- 添加捐赠图标 -->
+<div class ="post-donate">
+    <div id="donate_board" class="donate_bar center">
+        <a id="btn_donate" class="btn_donate" href="javascript:;" title="打赏"></a>
+        <span class="donate_txt">
+           &uarr;<br>
+		   求鼓励，求支持！
+        </span>
+        <br>
+      </div>  
+	<div id="donate_guide" class="donate_bar center hidden" >
+		<!-- 支付宝打赏图案 -->
+		<img src="/img/zhifubao.jpg" alt="支付宝打赏"> 
+		<!-- 微信打赏图案 -->
+		<img src="/img/weixin.jpg" alt="微信打赏">  
+    </div>
+	<script type="text/javascript">
+		document.getElementById('btn_donate').onclick = function(){
+			$('#donate_board').addClass('hidden');
+			$('#donate_guide').removeClass('hidden');
+		}
+	</script>
+</div>
+<! -- 添加捐赠图标 -->
 
   
 </article>
